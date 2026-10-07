@@ -1,0 +1,1255 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Prime Nation Workforce Private Limited</title>
+
+<meta name="description"
+content="Prime Nation Workforce Private Limited - Security, manpower, recruitment, placement and facility management services.">
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    font-family:Arial,Helvetica,sans-serif;
+    color:#172033;
+    line-height:1.6;
+    background:#ffffff;
+}
+
+.container{
+    width:92%;
+    max-width:1150px;
+    margin:auto;
+}
+
+/* HEADER */
+
+header{
+    position:sticky;
+    top:0;
+    z-index:999;
+    background:#ffffff;
+    box-shadow:0 2px 12px rgba(0,0,0,.08);
+}
+
+.navbar{
+    min-height:78px;
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+}
+
+.logo{
+    display:flex;
+    align-items:center;
+    gap:12px;
+    text-decoration:none;
+    color:#092747;
+}
+
+.logo-icon{
+    width:52px;
+    height:52px;
+    border-radius:12px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    background:linear-gradient(135deg,#092747,#087db5);
+    color:#ffffff;
+    font-size:20px;
+    font-weight:bold;
+}
+
+.logo-text strong{
+    display:block;
+    font-size:17px;
+    letter-spacing:1px;
+}
+
+.logo-text small{
+    display:block;
+    color:#687487;
+    font-size:9px;
+    letter-spacing:2px;
+    font-weight:bold;
+}
+
+nav{
+    display:flex;
+    gap:28px;
+}
+
+nav a{
+    text-decoration:none;
+    color:#243249;
+    font-size:14px;
+    font-weight:bold;
+}
+
+nav a:hover{
+    color:#087db5;
+}
+
+.menu{
+    display:none;
+    font-size:28px;
+    cursor:pointer;
+}
+
+/* HERO */
+
+.hero{
+    background:
+    linear-gradient(120deg,#06182f,#0a355f 55%,#087db5);
+    color:white;
+    padding:90px 0;
+}
+
+.hero-content{
+    display:grid;
+    grid-template-columns:1.2fr .8fr;
+    gap:60px;
+    align-items:center;
+}
+
+.tag{
+    color:#76d1ff;
+    font-size:12px;
+    letter-spacing:3px;
+    font-weight:bold;
+    margin-bottom:15px;
+}
+
+.hero h1{
+    font-size:58px;
+    line-height:1.08;
+    margin-bottom:22px;
+}
+
+.hero h1 span{
+    color:#72d2ff;
+}
+
+.hero p{
+    color:#d8e8f5;
+    font-size:18px;
+    max-width:650px;
+}
+
+.buttons{
+    display:flex;
+    gap:14px;
+    margin-top:30px;
+    flex-wrap:wrap;
+}
+
+.btn{
+    display:inline-block;
+    padding:14px 23px;
+    border-radius:8px;
+    text-decoration:none;
+    font-weight:bold;
+    transition:.2s;
+}
+
+.btn:hover{
+    transform:translateY(-2px);
+}
+
+.call{
+    background:#ffffff;
+    color:#092747;
+}
+
+.whatsapp{
+    background:#25d366;
+    color:white;
+}
+
+.hero-card{
+    background:rgba(255,255,255,.10);
+    border:1px solid rgba(255,255,255,.2);
+    border-radius:22px;
+    padding:40px;
+}
+
+.hero-card-icon{
+    width:70px;
+    height:70px;
+    background:white;
+    color:#087db5;
+    border-radius:18px;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    font-size:32px;
+    font-weight:bold;
+    margin-bottom:20px;
+}
+
+.hero-card h2{
+    margin-bottom:10px;
+}
+
+.hero-card p{
+    font-size:15px;
+    margin-bottom:20px;
+}
+
+.hero-card ul{
+    list-style:none;
+}
+
+.hero-card li{
+    margin:10px 0;
+}
+
+/* STATS */
+
+.stats{
+    background:#f5f7fa;
+}
+
+.stats-grid{
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+}
+
+.stat{
+    text-align:center;
+    padding:28px 10px;
+    border-right:1px solid #e2e6eb;
+}
+
+.stat:last-child{
+    border-right:none;
+}
+
+.stat strong{
+    display:block;
+    font-size:24px;
+    color:#087db5;
+}
+
+.stat span{
+    color:#687487;
+    font-size:12px;
+    font-weight:bold;
+}
+
+/* COMMON SECTION */
+
+section{
+    padding:90px 0;
+}
+
+.section-title{
+    text-align:center;
+    max-width:750px;
+    margin:0 auto 45px;
+}
+
+.section-title .tag{
+    color:#087db5;
+}
+
+.section-title h2{
+    font-size:43px;
+    line-height:1.15;
+    margin-bottom:15px;
+}
+
+.section-title p{
+    color:#687487;
+}
+
+/* ABOUT */
+
+.about{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:70px;
+    align-items:center;
+}
+
+.about h2{
+    font-size:44px;
+    line-height:1.15;
+    margin-bottom:20px;
+}
+
+.about p{
+    color:#687487;
+    margin-bottom:15px;
+}
+
+.about-box{
+    background:#082647;
+    color:#ffffff;
+    padding:50px;
+    border-radius:22px;
+}
+
+.about-box h3{
+    font-size:28px;
+    margin-bottom:15px;
+}
+
+.about-box p{
+    color:#c9d9e8;
+}
+
+/* SERVICES */
+
+.services-section{
+    background:#f6f8fb;
+}
+
+.services{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:20px;
+}
+
+.service{
+    background:white;
+    border:1px solid #e4e9ef;
+    border-radius:15px;
+    padding:28px;
+    transition:.25s;
+}
+
+.service:hover{
+    transform:translateY(-5px);
+    box-shadow:0 15px 35px rgba(0,0,0,.09);
+}
+
+.icon{
+    font-size:32px;
+    margin-bottom:12px;
+}
+
+.service h3{
+    font-size:19px;
+    margin-bottom:8px;
+}
+
+.service p{
+    color:#687487;
+    font-size:14px;
+}
+
+/* WHY US */
+
+.why{
+    background:#071b34;
+    color:white;
+}
+
+.why .section-title p{
+    color:#c7d6e5;
+}
+
+.why-grid{
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+    gap:25px;
+}
+
+.why-card{
+    border-top:1px solid rgba(255,255,255,.25);
+    padding-top:20px;
+}
+
+.why-card span{
+    color:#73cdf7;
+    font-weight:bold;
+}
+
+.why-card h3{
+    margin:10px 0;
+}
+
+.why-card p{
+    color:#c7d6e5;
+    font-size:14px;
+}
+
+/* CTA */
+
+.cta{
+    background:#087db5;
+    color:white;
+}
+
+.cta-content{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    gap:30px;
+}
+
+.cta h2{
+    font-size:36px;
+    line-height:1.15;
+}
+
+.cta p{
+    margin-top:8px;
+    color:#d9f1fc;
+}
+
+/* CONTACT */
+
+.contact{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:70px;
+}
+
+.contact h2{
+    font-size:43px;
+    line-height:1.15;
+    margin-bottom:18px;
+}
+
+.contact p{
+    color:#687487;
+}
+
+.contact-box{
+    margin-top:25px;
+    display:grid;
+    gap:12px;
+}
+
+.contact-item{
+    border:1px solid #e0e5eb;
+    border-radius:10px;
+    padding:17px;
+    text-decoration:none;
+    color:#172033;
+}
+
+.contact-item strong{
+    display:block;
+    color:#087db5;
+}
+
+.contact-item span{
+    font-weight:bold;
+}
+
+/* FORM */
+
+.form{
+    display:grid;
+    gap:13px;
+}
+
+.form input,
+.form select,
+.form textarea{
+    width:100%;
+    padding:14px;
+    border:1px solid #d9e0e8;
+    border-radius:8px;
+    font-family:inherit;
+    font-size:14px;
+}
+
+.form button{
+    border:none;
+    background:#092747;
+    color:white;
+    padding:15px;
+    border-radius:8px;
+    font-weight:bold;
+    cursor:pointer;
+}
+
+/* FOOTER */
+
+footer{
+    background:#06182f;
+    color:white;
+    padding:35px 0;
+}
+
+.footer{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    gap:20px;
+}
+
+.footer p{
+    color:#aebdcd;
+    font-size:12px;
+}
+
+.footer a{
+    color:#73cdf7;
+    text-decoration:none;
+    font-weight:bold;
+}
+
+/* FLOATING WHATSAPP */
+
+.floating-whatsapp{
+    position:fixed;
+    right:18px;
+    bottom:18px;
+    width:58px;
+    height:58px;
+    border-radius:50%;
+    background:#25d366;
+    color:white;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    text-decoration:none;
+    font-weight:bold;
+    box-shadow:0 8px 25px rgba(0,0,0,.25);
+    z-index:999;
+}
+
+/* MOBILE */
+
+@media(max-width:850px){
+
+    nav{
+        display:none;
+        position:absolute;
+        top:78px;
+        left:0;
+        right:0;
+        background:white;
+        flex-direction:column;
+        padding:20px 5%;
+        box-shadow:0 5px 15px rgba(0,0,0,.08);
+    }
+
+    nav.show{
+        display:flex;
+    }
+
+    .menu{
+        display:block;
+    }
+
+    .hero-content,
+    .about,
+    .contact{
+        grid-template-columns:1fr;
+    }
+
+    .hero h1{
+        font-size:43px;
+    }
+
+    .services{
+        grid-template-columns:repeat(2,1fr);
+    }
+
+    .why-grid{
+        grid-template-columns:repeat(2,1fr);
+    }
+
+    .stats-grid{
+        grid-template-columns:repeat(2,1fr);
+    }
+
+    .cta-content{
+        flex-direction:column;
+        align-items:flex-start;
+    }
+
+    .footer{
+        flex-direction:column;
+        text-align:center;
+    }
+}
+
+@media(max-width:540px){
+
+    section{
+        padding:65px 0;
+    }
+
+    .hero{
+        padding:65px 0;
+    }
+
+    .hero h1{
+        font-size:39px;
+    }
+
+    .services,
+    .why-grid{
+        grid-template-columns:1fr;
+    }
+
+    .stats-grid{
+        grid-template-columns:1fr 1fr;
+    }
+
+    .buttons .btn{
+        width:100%;
+        text-align:center;
+    }
+
+}
+</style>
+</head>
+
+<body>
+
+<!-- HEADER -->
+
+<header>
+
+<div class="container navbar">
+
+<a href="#home" class="logo">
+
+<div class="logo-icon">
+PN
+</div>
+
+<div class="logo-text">
+<strong>PRIME NATION</strong>
+<small>WORKFORCE PVT. LTD.</small>
+</div>
+
+</a>
+
+<div class="menu" onclick="openMenu()">☰</div>
+
+<nav id="navigation">
+
+<a href="#home">Home</a>
+<a href="#about">About</a>
+<a href="#services">Services</a>
+<a href="#why">Why Us</a>
+<a href="#contact">Contact</a>
+
+</nav>
+
+</div>
+
+</header>
+
+
+<!-- HERO -->
+
+<section class="hero" id="home">
+
+<div class="container hero-content">
+
+<div>
+
+<div class="tag">
+TRUST • PROFESSIONALISM • PERFORMANCE
+</div>
+
+<h1>
+Reliable Workforce.<br>
+<span>Stronger Businesses.</span>
+</h1>
+
+<p>
+Prime Nation Workforce Private Limited provides professional
+security, manpower, recruitment, placement and facility management
+solutions for businesses and organizations.
+</p>
+
+<div class="buttons">
+
+<a class="btn call" href="tel:+918207886470">
+📞 Call +91 82078 86470
+</a>
+
+<a class="btn whatsapp"
+href="https://wa.me/918207886470?text=Hello%20Prime%20Nation%20Workforce%2C%20I%20need%20manpower%20services."
+target="_blank">
+💬 WhatsApp Us
+</a>
+
+</div>
+
+</div>
+
+
+<div class="hero-card">
+
+<div class="hero-card-icon">
+✓
+</div>
+
+<h2>
+Workforce Solutions
+</h2>
+
+<p>
+Right people. Right skills. Right support.
+</p>
+
+<ul>
+
+<li>✓ Security Personnel</li>
+<li>✓ Skilled & Unskilled Manpower</li>
+<li>✓ Recruitment & Placement</li>
+<li>✓ Facility Management</li>
+
+</ul>
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- STATS -->
+
+<div class="stats">
+
+<div class="container stats-grid">
+
+<div class="stat">
+<strong>360°</strong>
+<span>Workforce Solutions</span>
+</div>
+
+<div class="stat">
+<strong>24/7</strong>
+<span>Support Approach</span>
+</div>
+
+<div class="stat">
+<strong>Pan India</strong>
+<span>Service Vision</span>
+</div>
+
+<div class="stat">
+<strong>1 Goal</strong>
+<span>Client Satisfaction</span>
+</div>
+
+</div>
+
+</div>
+
+
+<!-- ABOUT -->
+
+<section id="about">
+
+<div class="container about">
+
+<div>
+
+<div class="tag">
+ABOUT US
+</div>
+
+<h2>
+People You Can Depend On.
+</h2>
+
+<p>
+Prime Nation Workforce Private Limited is focused on delivering
+practical workforce and staffing solutions for organizations that
+value safety, efficiency and dependable service.
+</p>
+
+<p>
+From frontline security and housekeeping to industrial manpower,
+drivers, office staff and facility management, our objective is to
+help clients build a capable and well-managed workforce.
+</p>
+
+</div>
+
+
+<div class="about-box">
+
+<h3>
+Our Mission
+</h3>
+
+<p>
+To connect organizations with responsible, capable and
+service-oriented workforce solutions while building long-term
+professional relationships.
+</p>
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- SERVICES -->
+
+<section class="services-section" id="services">
+
+<div class="container">
+
+<div class="section-title">
+
+<div class="tag">
+OUR SERVICES
+</div>
+
+<h2>
+Complete Manpower & Facility Solutions
+</h2>
+
+<p>
+Flexible staffing support for different industries and operational requirements.
+</p>
+
+</div>
+
+
+<div class="services">
+
+
+<div class="service">
+<div class="icon">🛡️</div>
+<h3>Security Guard</h3>
+<p>
+Security personnel for commercial, residential, industrial and institutional requirements.
+</p>
+</div>
+
+
+<div class="service">
+<div class="icon">🧹</div>
+<h3>Housekeeping</h3>
+<p>
+Reliable housekeeping manpower for offices, hospitals, hotels and facilities.
+</p>
+</div>
+
+
+<div class="service">
+<div class="icon">⚙️</div>
+<h3>Skilled & Unskilled Manpower</h3>
+<p>
+Workforce solutions tailored to operational, production and support requirements.
+</p>
+</div>
+
+
+<div class="service">
+<div class="icon">🚘</div>
+<h3>Driver Manpower</h3>
+<p>
+Driver staffing solutions for business, institutional and operational needs.
+</p>
+</div>
+
+
+<div class="service">
+<div class="icon">🏭</div>
+<h3>Factory Manpower</h3>
+<p>
+Staffing support for manufacturing, production and industrial operations.
+</p>
+</div>
+
+
+<div class="service">
+<div class="icon">🏢</div>
+<h3>Office Staff</h3>
+<p>
+Support staff for administrative and day-to-day office operations.
+</p>
+</div>
+
+
+<div class="service">
+<div class="icon">🏥</div>
+<h3>Hospital Staff</h3>
+<p>
+Support manpower for hospitals, healthcare facilities and institutions.
+</p>
+</div>
+
+
+<div class="service">
+<div class="icon">🏨</div>
+<h3>Hotel Staff</h3>
+<p>
+Hospitality manpower for hotels, resorts and guest-service operations.
+</p>
+</div>
+
+
+<div class="service">
+<div class="icon">📦</div>
+<h3>Warehouse Manpower</h3>
+<p>
+Workforce for warehouse handling, support and operational activities.
+</p>
+</div>
+
+
+<div class="service">
+<div class="icon">🔧</div>
+<h3>Maintenance Staff</h3>
+<p>
+Manpower support for routine maintenance and facility operations.
+</p>
+</div>
+
+
+<div class="service">
+<div class="icon">👥</div>
+<h3>Recruitment & Placement</h3>
+<p>
+Recruitment support to help organizations find suitable workforce.
+</p>
+</div>
+
+
+<div class="service">
+<div class="icon">🏗️</div>
+<h3>Facility Management</h3>
+<p>
+Integrated manpower and operational support for managed facilities.
+</p>
+</div>
+
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- WHY US -->
+
+<section class="why" id="why">
+
+<div class="container">
+
+<div class="section-title">
+
+<div class="tag">
+WHY PRIME NATION
+</div>
+
+<h2>
+Built Around Your Workforce Needs
+</h2>
+
+<p>
+Professional workforce solutions designed around your business requirements.
+</p>
+
+</div>
+
+
+<div class="why-grid">
+
+<div class="why-card">
+<span>01</span>
+<h3>Professional Approach</h3>
+<p>
+Structured service delivery with clear communication and operational focus.
+</p>
+</div>
+
+<div class="why-card">
+<span>02</span>
+<h3>Flexible Staffing</h3>
+<p>
+Solutions designed around the size and nature of your requirement.
+</p>
+</div>
+
+<div class="why-card">
+<span>03</span>
+<h3>Client Focus</h3>
+<p>
+We aim to build long-term relationships through responsive service.
+</p>
+</div>
+
+<div class="why-card">
+<span>04</span>
+<h3>Multiple Industries</h3>
+<p>
+Support across security, industrial, office, healthcare and hospitality.
+</p>
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- CTA -->
+
+<section class="cta">
+
+<div class="container cta-content">
+
+<div>
+
+<div class="tag">
+NEED WORKFORCE?
+</div>
+
+<h2>
+Let's Build The Right Team For You.
+</h2>
+
+<p>
+Tell us your manpower requirement and our team will connect with you.
+</p>
+
+</div>
+
+<a href="tel:+918207886470" class="btn call">
+Contact Now
+</a>
+
+</div>
+
+</section>
+
+
+<!-- CONTACT -->
+
+<section id="contact">
+
+<div class="container contact">
+
+<div>
+
+<div class="tag">
+CONTACT US
+</div>
+
+<h2>
+Let's Discuss Your Requirement.
+</h2>
+
+<p>
+For security, manpower, recruitment, placement or facility
+management enquiries, contact Prime Nation Workforce Private Limited.
+</p>
+
+
+<div class="contact-box">
+
+<a class="contact-item" href="tel:+918207886470">
+
+<strong>📞 Phone</strong>
+
+<span>
++91 82078 86470
+</span>
+
+</a>
+
+
+<a class="contact-item"
+href="https://wa.me/918207886470"
+target="_blank">
+
+<strong>💬 WhatsApp</strong>
+
+<span>
+Chat With Us
+</span>
+
+</a>
+
+</div>
+
+</div>
+
+
+<!-- ENQUIRY FORM -->
+
+<form class="form" onsubmit="sendWhatsApp(event)">
+
+<input
+type="text"
+id="name"
+placeholder="Your Name"
+required
+>
+
+<input
+type="tel"
+id="phone"
+placeholder="Mobile Number"
+required
+>
+
+<select id="service" required>
+
+<option value="">
+Select Service
+</option>
+
+<option>Security Guard</option>
+<option>Housekeeping</option>
+<option>Skilled & Unskilled Manpower</option>
+<option>Driver Manpower</option>
+<option>Factory Manpower</option>
+<option>Office Staff</option>
+<option>Hospital Staff</option>
+<option>Hotel Staff</option>
+<option>Warehouse Manpower</option>
+<option>Maintenance Staff</option>
+<option>Recruitment & Placement</option>
+<option>Facility Management</option>
+
+</select>
+
+<textarea
+id="message"
+rows="5"
+placeholder="Tell us about your requirement">
+</textarea>
+
+<button type="submit">
+Send Enquiry on WhatsApp
+</button>
+
+</form>
+
+</div>
+
+</section>
+
+
+<!-- FOOTER -->
+
+<footer>
+
+<div class="container footer">
+
+<div class="logo">
+
+<div class="logo-icon">
+PN
+</div>
+
+<div class="logo-text">
+
+<strong style="color:white;">
+PRIME NATION
+</strong>
+
+<small style="color:#aebdcd;">
+WORKFORCE PVT. LTD.
+</small>
+
+</div>
+
+</div>
+
+
+<p>
+© <span id="year"></span>
+Prime Nation Workforce Private Limited.
+All Rights Reserved.
+</p>
+
+
+<a href="tel:+918207886470">
++91 82078 86470
+</a>
+
+</div>
+
+</footer>
+
+
+<!-- FLOATING WHATSAPP -->
+
+<a
+class="floating-whatsapp"
+href="https://wa.me/918207886470"
+target="_blank"
+title="WhatsApp">
+WA
+</a>
+
+
+<script>
+
+function openMenu(){
+
+    document
+    .getElementById("navigation")
+    .classList
+    .toggle("show");
+
+}
+
+
+document.getElementById("year").innerText =
+new Date().getFullYear();
+
+
+function sendWhatsApp(event){
+
+    event.preventDefault();
+
+    let name =
+    document.getElementById("name").value;
+
+    let phone =
+    document.getElementById("phone").value;
+
+    let service =
+    document.getElementById("service").value;
+
+    let message =
+    document.getElementById("message").value;
+
+
+    let text =
+    "Hello Prime Nation Workforce,%0A%0A" +
+    "Name: " + encodeURIComponent(name) + "%0A" +
+    "Mobile: " + encodeURIComponent(phone) + "%0A" +
+    "Service: " + encodeURIComponent(service) + "%0A" +
+    "Requirement: " + encodeURIComponent(message);
+
+
+    window.open(
+    "https://wa.me/918207886470?text=" + text,
+    "_blank"
+    );
+
+}
+
+</script>
+
+</body>
+</html>
